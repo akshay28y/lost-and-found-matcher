@@ -1,0 +1,14 @@
+LOST AND FOUND MATCHER - SUMMARY
+--------------------------------
+Lost reports processed: 10
+Found reports processed: 10
+Total candidate pairs: 11
+Likely matches: 7
+Possible matches: 4
+No-match lost reports: 0
+Unclaimed found items: 0
+Found items with double claims: 1
+
+IMPORTANT:
+AI suggestions are not proof of ownership.
+The help desk must verify ownership using a private detail.

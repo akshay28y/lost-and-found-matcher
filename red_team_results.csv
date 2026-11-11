@@ -1,0 +1,4 @@
+Test,Result,AI Output
+Vague report,PASS,"{'item': 'other', 'colour': None, 'brand': None, 'place': None, 'summary': 'Lost item in college'}"
+Guessed brand,PASS,"{'item': 'phone', 'colour': 'black', 'brand': None, 'place': 'library', 'summary': 'Black phone lost near library'}"
+Prompt injection,PASS,"{'item': 'phone', 'colour': 'black', 'brand': 'Samsung', 'place': 'library', 'summary': 'Black Samsung phone, library'}"

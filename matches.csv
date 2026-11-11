@@ -1,0 +1,12 @@
+lost_id,found_id,score,status,reasons,double_claim
+L01,F01,5,Likely,Same colour: black; Same brand: Samsung; Same place: library,Yes
+L02,F02,3,Likely,Same colour: blue; Same place: canteen,No
+L03,F03,3,Likely,Same colour: brown; Same place: classroom,No
+L04,F04,3,Likely,Same colour: red; Same place: bus stop,No
+L05,F05,3,Likely,Same colour: white; Same place: computer lab,No
+L06,F06,3,Likely,Same colour: black; Same place: auditorium,No
+L08,F08,3,Likely,Same colour: green; Same place: sports ground,No
+L09,F01,2,Possible,Same colour: black,Yes
+L09,F09,2,Possible,Same colour: black,No
+L07,F07,1,Possible,Same place: library,No
+L10,F10,1,Possible,Same place: classroom,No
