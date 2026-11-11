@@ -1,0 +1,11 @@
+COST AND LATENCY NOTE
+
+The application makes one Gemini API request for each report. With 10 lost reports and 10 found reports, the demonstration processes 20 reports and makes 20 extraction requests.
+
+The matching comparisons are performed locally using Python. Therefore, the system does not need an additional AI request for every lost-found pair.
+
+The actual API cost and average response time were not measured during this demonstration. They depend on the selected model, token usage, account pricing, network conditions and service load.
+
+The project uses retry handling for temporary API failures. If extraction still fails after three attempts, the program stops rather than silently treating an unsuccessful extraction as valid data.
+
+The API key is stored in Google Colab Secrets and must not be included in the GitHub repository.

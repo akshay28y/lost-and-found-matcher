@@ -1,0 +1,49 @@
+PROJECT SPECIFICATION
+Project Title: Lost and Found Matcher
+
+1. PROBLEM
+Students often lose personal belongings on campus. Matching lost reports with found reports manually can take time.
+
+2. OBJECTIVE
+To develop a Python application that uses AI to extract report details and suggest possible lost-and-found matches.
+
+3. INPUT
+Two CSV files:
+- lost.csv
+- found.csv
+
+Each file contains an ID, date and report description. At least 10 reports are included in each file.
+
+4. AI EXTRACTION
+Google Gemini extracts:
+- Item
+- Colour
+- Brand
+- Place
+- Summary (maximum 8 words)
+
+The response must follow the specified JSON structure.
+
+5. PYTHON VALIDATION
+Python validates the AI response and checks whether colour, brand and place appear in the original report. Unsupported details are rejected.
+
+6. MATCHING RULES
+- Same item type is required.
+- Different specified colours or brands cause rejection.
+- Reports more than 30 days apart are rejected.
+- Items classified as other are not automatically matched.
+- Same colour earns 2 points.
+- Same brand earns 2 points.
+- Same place earns 1 point.
+- Score 3 or above: Likely.
+- Score 1 or 2: Possible.
+- Score 0: Not listed.
+
+7. OUTPUT
+- matches.csv
+- no_match.csv
+- unclaimed.csv
+- summary.txt
+
+8. SAFETY
+The application only suggests candidate matches. The campus help desk must verify ownership using a private detail that does not appear in either report. AI must never make the final ownership decision.

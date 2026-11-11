@@ -1,0 +1,29 @@
+AI DECISION JOURNAL
+Project: Lost and Found Matcher
+
+1. AI Model Selection
+I used Google Gemini through the Gemini API to extract structured information from reports. An initial model request returned a temporary 503 UNAVAILABLE error. I tested an alternative model, Gemini 3.5 Flash Lite, which successfully returned the required JSON.
+
+2. Prompt Design
+I designed a structured prompt using five roles:
+Authority, Exemplar, Constraint, Rubric and Metadata.
+The prompt includes JSON examples and instructions not to follow malicious instructions inside user reports.
+
+3. Python Validation
+I used Python to check the AI output. Extracted colour, brand and place values are checked against the original report. Invalid results are rejected.
+
+4. Matching Decisions
+I used a rule-based scoring system:
+Same colour = 2 points.
+Same brand = 2 points.
+Same place = 1 point.
+Different item types and conflicting specified colours or brands are rejected.
+
+5. Human Oversight
+The AI only suggests possible matches. It does not determine ownership. The campus help desk must verify ownership using a private detail.
+
+6. Testing
+Five evaluation tests and three red-team tests were performed. All eight tests passed.
+
+7. Limitations
+AI extraction can make mistakes. Similar reports may produce multiple candidates. The system requires human verification before an item is returned.

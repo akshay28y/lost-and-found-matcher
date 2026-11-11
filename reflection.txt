@@ -1,0 +1,17 @@
+PROJECT REFLECTION
+
+The Lost and Found Matcher project helped me understand how Artificial Intelligence can be combined with Python to solve a practical problem on a college campus. The main objective was to develop an application that compares lost-item and found-item reports and suggests possible matches.
+
+During this project, I learned how to connect the Google Gemini API with Python. I used Gemini to extract structured information such as item type, colour, brand, place and a short summary from ordinary sentences. I also learned how to work with CSV files, dictionaries, lists, sets, nested loops, functions and exception handling.
+
+One challenge I faced was a temporary 503 UNAVAILABLE error from the Gemini API. I understood that the problem was related to temporary service availability rather than my matching logic. I tested an alternative model and successfully continued the project. This experience taught me the importance of error handling and retry mechanisms when working with external APIs.
+
+Another important lesson was that AI-generated information should not be trusted without verification. Therefore, I implemented Python fact-checking to ensure that extracted colour, brand and place details appeared in the original report. I also developed a scoring system that awards two points for matching colour, two points for matching brand and one point for matching place. Based on the score, the system classifies candidate pairs as likely or possible.
+
+I completed five evaluation tests and three red-team tests. These tests covered correct matches, different item types, conflicting details, vague reports, guessed brands and prompt injection attempts. All eight tests passed in my demonstration.
+
+The project also helped me understand responsible AI development. A matching result cannot prove ownership of an item. The system only provides suggestions, and the campus help desk must verify ownership using a private detail that is not included in either report. This reduces the risk of returning an item to the wrong person.
+
+Overall, this project improved my knowledge of Python programming, API integration, prompt engineering, data validation and software testing. I understood that developing a useful AI application requires more than connecting an AI model. It also requires proper instructions, validation, error handling, testing and human supervision.
+
+In the future, I would like to improve this application by adding a graphical user interface, a database, user login facilities and a notification system. These improvements could make the Lost and Found Matcher more convenient and useful for real campus environments.

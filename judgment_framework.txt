@@ -1,0 +1,16 @@
+JUDGMENT FRAMEWORK
+
+| Situation | System decision | Reason |
+| Same item and score >= 3 | Likely | Strong matching details |
+| Same item and score 1-2 | Possible | Some matching evidence |
+| Score 0 | Not listed | No supporting matching evidence |
+| Different item types | Reject | Item categories do not match |
+| Different specified colours | Reject | Hard mismatch |
+| Different specified brands | Reject | Hard mismatch |
+| Date difference above 30 days | Reject | Outside matching period |
+| Item classified as other | Do not automatically match | Insufficient item specificity |
+| One found item suggested for multiple lost reports | Flag double claim | Requires human investigation |
+| AI extraction failure | Stop and report error | Do not invent extracted details |
+
+FINAL HUMAN DECISION:
+The help desk verifies ownership using a private detail not included in either report. AI suggestions are never treated as proof.
